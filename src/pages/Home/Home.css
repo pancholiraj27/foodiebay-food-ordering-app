@@ -1,0 +1,7 @@
+.servicesSection {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}

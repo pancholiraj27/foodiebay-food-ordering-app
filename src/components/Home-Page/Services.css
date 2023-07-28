@@ -1,0 +1,44 @@
+.servicesBox {
+  width: 30%;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  border-radius: 18px;
+}
+.servicesBox:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 5px 8px 5px #888888;
+}
+.aTag {
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+
+.baseImg {
+  height: 150px;
+}
+.baseImg img {
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background-color: purple;
+}
+
+.aboutServiceDetail {
+  padding: 12px;
+  border-left: 1px solid rgb(232, 232, 232);
+  border-right: 1px solid rgb(232, 232, 232);
+  border-bottom: 1px solid rgb(232, 232, 232);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.aboutServiceDetail h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.aboutServiceDetail p {
+  font-size: 16px;
+  color: gray;
+}
