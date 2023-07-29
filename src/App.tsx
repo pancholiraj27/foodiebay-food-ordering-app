@@ -1,6 +1,9 @@
 import "./App.css";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import OrderOnline from "./pages/Order-Online/OrderOnline";
+import Dining from "./pages/Dining/Dining";
+import NightLife from "./pages/Nightlife/NightLife";
 
 function App() {
   return (
@@ -8,12 +11,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/order-online" element={<h1>Order - online</h1>} />
-          <Route path="/dining" element={<h1>dining</h1>} />
-          <Route
-            path="/nightlife-and-clubs"
-            element={<h1>nightlife-and-clubs</h1>}
-          />
+          <Route path="/order-online" element={<OrderOnline />} />
+          <Route path="/dining" element={<Dining />} />
+          <Route path="/nightlife-and-clubs" element={<NightLife />} />
         </Routes>
       </BrowserRouter>
     </div>

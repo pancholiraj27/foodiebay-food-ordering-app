@@ -1,0 +1,12 @@
+.nav-location {
+  color: rgb(130, 130, 130);
+}
+.nav-location span a {
+  text-decoration: none;
+  color: rgb(130, 130, 130);
+  transition: 0.1s ease-in;
+}
+
+.nav-location span a:hover {
+  color: #e03546;
+}
