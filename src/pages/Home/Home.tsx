@@ -8,7 +8,7 @@ const Home = () => {
       <ZumboContainer />
       <div className="servicesSection">
         {servicesData.map((item) => {
-          return <Services item={item} />;
+          return <Services key={item.id} item={item} />;
         })}
       </div>
     </div>

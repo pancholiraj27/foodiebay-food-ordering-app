@@ -1,0 +1,144 @@
+.borderTop {
+  border-top: 1px solid rgb(232, 232, 232);
+}
+
+.mainDiv {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+.imageBoxPDMain {
+  display: flex;
+  max-height: 350px;
+}
+.imageBoxPD-1 {
+  width: 100%;
+  margin: 5px;
+  overflow: hidden;
+  flex: 6;
+}
+.imageBoxPD-1 .img {
+  transition: ease-in 0.3s;
+  transform: scale(1);
+}
+.imageBoxPD-1:hover img {
+  transform: scale(1.1);
+}
+.imageBoxPD-2 {
+  flex: 2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.imageBoxPD-2 .img {
+  margin: 5px 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: ease-in 0.3s;
+}
+.imageBoxPD-2 img:hover {
+  transform: scale(1.1);
+}
+.imageBoxPD-3 {
+  flex: 2;
+  margin: 5px;
+  overflow: hidden;
+}
+.imageBoxPD-3 .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: ease-in 0.3s;
+}
+.imageBoxPD-3:hover img {
+  transform: scale(1.1);
+}
+
+.name-ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.name-ratings h3 {
+  font-size: 38px;
+  font-weight: 500;
+}
+.name-ratings .ratings {
+  display: flex;
+}
+
+.ratingsMain {
+  align-items: center;
+  display: flex;
+}
+
+.ratingsDiv {
+  background-color: green;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.ratingsMain .ratingDetail {
+  margin: 0 20px 0 10px;
+}
+.ratingsMain .ratingDetail div {
+  color: rgb(54, 54, 54);
+  font-weight: 700;
+}
+.ratingsMain .ratingDetail span {
+  font-weight: 100;
+  font-size: 12px;
+  padding-bottom: 2px;
+  border-bottom: 0.5px dashed rgb(181, 181, 181);
+}
+
+.subHeading {
+  color: rgb(130, 130, 130);
+  font-size: 18px;
+  font-weight: 100;
+  margin: 10px 0 5px;
+}
+.address {
+  color: rgb(156, 156, 156);
+  font-size: 16px;
+  font-weight: 100;
+}
+.timing {
+  color: rgb(130, 130, 130);
+  font-weight: 100;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.detailEnding {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.direction {
+  color: black;
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 12px;
+  margin: 0 40px 0 0;
+}
+.add2Cart {
+  background-color: #f1555f;
+  color: white;
+  border: navajowhite;
+  cursor: pointer;
+}
+
+/* item.info.image.url */
+/* item.info.name */
+/* item.info.cuisine.map() - name */
+/* item.info.locality.address - name */
+/* item.info.timing .text*/
+/* https://www.google.com/maps/place - > locality.localityUrl
+/bangalore/shanti-nagar-restaurants */

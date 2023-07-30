@@ -1,0 +1,15 @@
+.screenWidth {
+  width: 70%;
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+.foodCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.screenWidth h3 {
+  font-size: 28px;
+  font-weight: 500;
+}

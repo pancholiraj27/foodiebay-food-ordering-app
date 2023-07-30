@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import LocationIndicator from "./LocationIndicator";
 import OrderType from "./OrderType";
 import "./ServicesNavbar.css";
-const ServicesNavbar = () => {
+const ServicesNavbar = (props: any) => {
   return (
     <div className="main">
       <div className="servicesNav">
         <div className="container">
-          <h2>Tomato</h2>
+          <Link className="linkTag" to="/">
+            <h2>Tomato</h2>
+          </Link>
           <input
             className="inputValue"
             type="text"
@@ -16,7 +19,13 @@ const ServicesNavbar = () => {
         <div className="user">hello Raj</div>
       </div>
       <LocationIndicator />
-      <OrderType />
+      {props.isOrderType ? (
+        <>
+          <OrderType />
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
