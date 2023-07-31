@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import "./Card.css";
 const Card = (props: any) => {
   let location = useLocation();
-  console.log(location.pathname);
   const {
     subHeading,
     name,
