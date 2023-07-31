@@ -17,6 +17,10 @@ function App() {
           <Route path="/nightlife-and-clubs" element={<NightLife />} />
           <Route path="/order-online/:id/:id" element={<ProductDetail />} />
           <Route path="/dining/:id/:id" element={<ProductDetail />} />
+          <Route
+            path="/nightlife-and-clubs/:id/:id"
+            element={<ProductDetail />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
