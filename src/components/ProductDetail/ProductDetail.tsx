@@ -10,7 +10,6 @@ const ProductDetail = () => {
   const location = useLocation();
   let id = location.search;
   id = id.substring(1);
-  console.log(location.pathname.split("/")[1]);
 
   useEffect(() => {
     if (location.pathname.split("/")[1] == "order-online") {
@@ -24,12 +23,12 @@ const ProductDetail = () => {
     }
   }, []);
 
-  console.log(fetchData, "from here fetch data");
   return (
     <div>
       <ServicesNavbar isOrderType={false} />
       <div className="borderTop">
         {fetchData.map((item: any) => {
+          console.log(item.info.ratingNew.ratings);
           if (item.info.resId === parseInt(id)) {
             return (
               <div className="mainDiv" key={parseInt(id)}>
@@ -68,8 +67,14 @@ const ProductDetail = () => {
                   </div>
                   <section className="ratings">
                     <div className="ratingsMain">
-                      <div className="ratingsDiv">
-                        4.5
+                      <div
+                        className="ratingsDiv"
+                        style={{
+                          backgroundColor:
+                            item.info.ratingNew.ratings.DINING.bgColorV2.type,
+                        }}
+                      >
+                        {item.info.ratingNew.ratings.DINING.rating}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="#FFFFFF"
@@ -85,13 +90,21 @@ const ProductDetail = () => {
                         </svg>
                       </div>
                       <section className="ratingDetail">
-                        <div>2318</div>
+                        <div>
+                          {item.info.ratingNew.ratings.DINING.reviewCount}
+                        </div>
                         <span>Dinning Review</span>
                       </section>
                     </div>
                     <div className="ratingsMain">
-                      <div className="ratingsDiv">
-                        4.8
+                      <div
+                        className="ratingsDiv"
+                        style={{
+                          backgroundColor:
+                            item.info.ratingNew.ratings.DELIVERY.bgColorV2.type,
+                        }}
+                      >
+                        {item.info.ratingNew.ratings.DELIVERY.rating}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="#FFFFFF"
@@ -107,7 +120,9 @@ const ProductDetail = () => {
                         </svg>
                       </div>
                       <section className="ratingDetail">
-                        <div>2318</div>
+                        <div>
+                          {item.info.ratingNew.ratings.DELIVERY.reviewCount}
+                        </div>
                         <span>Delivery Review</span>
                       </section>
                     </div>
@@ -129,7 +144,11 @@ const ProductDetail = () => {
                   >
                     <div className="direction">Direction</div>
                   </Link>
-                  <div className="direction add2Cart">Add To Cart</div>
+                  {location.pathname.split("/")[1] == "order-online" ? (
+                    <div className="direction add2Cart">Add To Cart</div>
+                  ) : (
+                    <div className="direction add2Cart">Book A Table</div>
+                  )}
                 </div>
               </div>
             );

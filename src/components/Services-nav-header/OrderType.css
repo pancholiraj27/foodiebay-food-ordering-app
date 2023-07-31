@@ -9,6 +9,7 @@
   align-items: center;
   padding-bottom: 10px;
   padding-right: 50px;
+  color: #6f6f6f;
 }
 
 .imgDiv {
@@ -24,11 +25,12 @@
 
 .orderDetail h3 {
   margin-left: 10px;
+  letter-spacing: 1px;
 }
 
 .isActive {
-  border-bottom: 3px solid #ff7e8b;
   color: #e03546;
+  border-bottom: 3px solid #ff7e8b;
   transition: 4s ease;
 }
 

@@ -27,7 +27,7 @@ const Card = (props: any) => {
       >
         <div className="imageBox">
           <img src={img} alt={name} />
-          <div className="offer">{offer}</div>
+          {offer ? <div className="offer">{offer}</div> : ""}
         </div>
         <div className="itemHeading">
           <div className="card-details">

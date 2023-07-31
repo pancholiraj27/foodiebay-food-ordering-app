@@ -53,7 +53,7 @@ const OrderType = () => {
               />
             </div>
           )}
-          <h3>Delivery</h3>
+          <h3>Dining</h3>
         </div>
       </Link>
 
@@ -78,7 +78,7 @@ const OrderType = () => {
               />
             </div>
           )}
-          <h3>Delivery</h3>
+          <h3>Nightlife</h3>
         </div>
       </Link>
     </div>
