@@ -130,12 +130,24 @@
   border-radius: 12px;
   margin: 0 40px 0 0;
   font-size: 1.8rem;
+  transition: 0.2s ease-in;
 }
+.direction:hover {
+  background-color: #f1555fe3;
+  color: white;
+  border: 1px solid #f1555fe3;
+}
+
 .add2Cart {
   background-color: #f1555f;
   color: white;
   border: navajowhite;
   cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.add2Cart:hover {
+  background-color: #f1555fd2;
+  border: none;
 }
 
 .tableBook {

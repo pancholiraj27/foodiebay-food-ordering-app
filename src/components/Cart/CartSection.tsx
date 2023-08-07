@@ -163,9 +163,18 @@ const CartSection = (props: any) => {
       {cartItemCount > 0 ? (
         <div className="cartCheckoutDiv">
           <div className="cartTotal">Total - ₹{cartItemTotal}</div>
-          <div className="cartCheckout" onClick={onCheckOut}>
-            checkout Cart
-          </div>
+          {isAuthenticated ? (
+            <div className="cartCheckout" onClick={onCheckOut}>
+              checkout Cart
+            </div>
+          ) : (
+            <div
+              className="cartCheckout cartCheckLock"
+              onClick={() => alert("You Need To Sign In For Order")}
+            >
+              checkout Cart
+            </div>
+          )}
         </div>
       ) : (
         ""

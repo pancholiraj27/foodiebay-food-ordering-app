@@ -106,13 +106,16 @@
   font-size: 1.8rem;
 }
 
-/* @media screen and (min-width: 1025) {
+.cartCheckLock {
+  background-color: gray;
+}
+.cartCheckout:hover {
+  background-color: rgba(0, 128, 0, 0.781);
 }
 
-@media screen and (min-width: 480) {
+.cartCheckLock:hover {
+  background-color: rgba(128, 128, 128, 0.76);
 }
-@media screen and (min-width: 320px) {
-} */
 
 @media screen and (max-width: 768px) {
   .cartItemsDiv {
