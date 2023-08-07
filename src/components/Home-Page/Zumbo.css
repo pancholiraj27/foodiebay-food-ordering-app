@@ -1,7 +1,8 @@
 .zumboContainer {
   background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
-  padding-bottom: 13%;
+  padding-bottom: 4rem;
   background-size: cover;
+  max-height: 55vh;
 }
 
 .zumboHeading {
@@ -14,30 +15,83 @@
 
 .zumboHeading h1 {
   font-style: italic;
-  font-size: 80px;
+  font-size: 8rem;
   letter-spacing: 10px;
 }
 
 .zumboHeading p {
   padding-top: 10px;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 /* Zumbo Nav */
 .zumboNav {
+  max-width: 60%;
+  margin: 0 auto;
   color: white;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 25px 0;
-  font-size: 14px;
+  font-size: 1.4rem;
   align-items: center;
 }
 
 .zumboNav ul {
   display: flex;
   list-style: none;
-  width: 40%;
   justify-content: space-evenly;
-  font-size: 18px;
+  font-size: 1.8rem;
+  align-items: center;
+  width: 50%;
+}
+
+.zumboNav ul div {
+  width: 100%;
+}
+
+.zumboNav ul li {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.zumboNav ul li:hover {
+  cursor: pointer;
+  color: tomato;
+}
+/* login */
+.loginDetails {
+  display: flex;
+  align-items: center;
+}
+.loginDetails span {
+  font-size: 1.5rem;
+}
+
+.loginDetails img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .zumboHeading {
+    max-width: 80%;
+    width: 80%;
+  }
+  .zumboNav {
+    max-width: 80%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .zumboNav ul {
+    width: 80%;
+    text-align: end;
+  }
+
+  .zumboNav ul div {
+    width: 100%;
+  }
 }

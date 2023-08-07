@@ -1,10 +1,11 @@
 // it is used on home page
+import { Link } from "react-router-dom";
 import "./Services.css";
 const Services = (props: any) => {
   const { title, description, id, img, link } = props.item;
   return (
     <div className="servicesBox">
-      <a href={link} className="aTag">
+      <Link to={link} className="aTag">
         <div className="baseImg">
           <img src={img} alt={title} />
         </div>
@@ -12,7 +13,7 @@ const Services = (props: any) => {
           <h2>{title}</h2>
           <p>{description}</p>
         </section>
-      </a>
+      </Link>
     </div>
   );
 };

@@ -1,0 +1,88 @@
+.searchBox2 {
+  display: flex;
+  height: 50px;
+  max-width: 70%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.searchBoxFirst2 {
+  flex: 2;
+  position: relative;
+  border: 1px solid rgb(232, 232, 232);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 100%;
+}
+
+.searchBoxTwo2 {
+  flex: 5;
+  position: relative;
+  border: 1px solid rgb(232, 232, 232);
+  border-left: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 100%;
+}
+
+.inputSearchBox2 {
+  padding: 20px 10px;
+}
+
+.locationBox2 {
+  border-radius: 1px solid black;
+  border-radius: 1px solid black;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.searchInput2 {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding-left: 60px;
+}
+
+.svgDiv2 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .searchBox2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .searchBox2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchBox2 {
+  }
+  .inputSearchBox2 {
+    padding: 10px 5px;
+  }
+  .locationBox2 {
+    padding-left: 30px;
+  }
+  .searchInput2 {
+    padding-left: 50px;
+  }
+  .svgDiv2 {
+    top: 20%;
+  }
+}

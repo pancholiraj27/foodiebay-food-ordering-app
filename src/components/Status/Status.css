@@ -1,0 +1,36 @@
+.setStatus {
+  position: absolute;
+  right: 0;
+  padding: 10px 80px 10px 40px;
+  top: 10%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 30%;
+  z-index: 999;
+  font-size: 2rem;
+}
+.addToCart {
+  background-color: #afadad;
+  color: black;
+}
+
+.orderPlaced {
+  background-color: #00cc00;
+  color: white;
+}
+
+.error {
+  background-color: tomato;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .setStatus {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .setStatus {
+    width: 80%;
+  }
+}

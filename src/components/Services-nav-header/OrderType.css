@@ -24,6 +24,7 @@
 }
 
 .orderDetail h3 {
+  font-size: 1.8rem;
   margin-left: 10px;
   letter-spacing: 1px;
 }
@@ -47,4 +48,25 @@
 .LinkTag {
   color: #6f6f6f;
   text-decoration: none;
+}
+
+/* @media screen and (min-width: 1025) {
+}
+
+@media screen and (min-width: 480) {
+}
+@media screen and (min-width: 320px) {
+} */
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 600px) {
+  .orderType {
+    flex-direction: column;
+  }
+  .LinkTag {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 480px) {
 }

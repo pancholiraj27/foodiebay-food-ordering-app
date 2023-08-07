@@ -22,19 +22,19 @@ const FilterJson = [
 ];
 
 const FilterCard = (props: any) => {
-  const { isFilter, setIsFilter } = props;
+  const { isFilter, setIsFilter, setIsFilterApplied, setFilterAppliedData } =
+    props;
 
   const [whichType, setWhichType] = useState("sort");
   const [typeTarget, setTypeTarget] = useState<any>("sortByFC");
   const [sortBy, setSortBy] = useState("Popularity");
-  const [filterRating, setFilterRating] = useState(3);
-  const [costForPerson, setCostForPerson] = useState(500);
+  const [filterRating, setFilterRating] = useState("");
+  const [costForPerson, setCostForPerson] = useState("");
 
   const filterClicked = (e: any): void => {
     // first remove the active class
     console.log(typeTarget);
     const activeDiv = document.getElementsByClassName(typeTarget);
-    console.log(activeDiv);
     activeDiv[0].classList.remove("isActiveFilter");
     setWhichType("");
     // if someone clicks on the sub heading of sort by so it will add class to it's parent component
@@ -44,7 +44,6 @@ const FilterCard = (props: any) => {
       setWhichType("sort");
       return;
     }
-
     // if it is normal div so it will add a class to it and set type to the class name of it
     setTypeTarget(e.target.className);
     e.target.classList.add("isActiveFilter");
@@ -60,8 +59,19 @@ const FilterCard = (props: any) => {
     setWhichType("sort");
     setTypeTarget("sortByFC");
     setSortBy("Popularity");
-    setFilterRating(3);
-    setCostForPerson(500);
+    setFilterRating("");
+    setCostForPerson("");
+    console.log("clicked");
+    setIsFilter(false);
+    setFilterAppliedData([]);
+  };
+
+  const onFilterApply = () => {
+    setIsFilter(false);
+    setIsFilterApplied(true);
+    setFilterAppliedData([
+      { sortBy: sortBy, rating: filterRating, cost: costForPerson },
+    ]);
   };
 
   return (
@@ -86,7 +96,9 @@ const FilterCard = (props: any) => {
             <div className="clearAll" onClick={clearAllFilter}>
               Clear All
             </div>
-            <div className="apply">Apply</div>
+            <div className="apply" onClick={onFilterApply}>
+              Apply
+            </div>
           </div>
         </div>
       </div>

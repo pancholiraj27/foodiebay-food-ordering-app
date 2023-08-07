@@ -36,8 +36,8 @@ const Card = (props: any) => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#FFFFFF"
-                width="0.8rem"
-                height="0.6rem"
+                width="1.2rem"
+                height="1rem"
                 viewBox="0 0 20 20"
                 aria-labelledby="icon-svg-title- icon-svg-desc-"
                 role="img"
@@ -48,18 +48,18 @@ const Card = (props: any) => {
               </svg>
             </div>
           </div>
-          <div className="card-details ">
+          <div className="card-details">
             <div className="foodDescription">{subHeading} </div>
-            <div className="foodDescription">{cost}</div>
+            <div className="foodDescription">₹{cost}</div>
           </div>
           <div className="card-details title-rating">
             <div></div>
             <div className="timing">
               {location.pathname == "/order-online"
-                ? deliveryTime
+                ? `${deliveryTime}`
                 : location.pathname == "/dining"
-                ? distance
-                : distance}
+                ? `${distance} Km`
+                : `${distance} Km`}
             </div>
           </div>
         </div>

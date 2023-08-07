@@ -67,7 +67,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1000
       },
       "locality": {
         "name": "JP Nagar, Bangalore",
@@ -108,7 +108,7 @@
       "clickUrl": "/bangalore/brahma-brews-jp-nagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "8.7 km",
+    "distance": 8.7,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -202,7 +202,7 @@
         "text": "₹1,300 for two"
       },
       "cfo": {
-        "text": "₹550 for one"
+        "text": 550
       },
       "locality": {
         "name": "MG Road, Bangalore",
@@ -268,7 +268,7 @@
       "clickUrl": "/bangalore/daysie-all-day-casual-bar-mg-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "2.6 km",
+    "distance": 2.6,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -356,7 +356,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 800
       },
       "locality": {
         "name": "Whitefield, Bangalore",
@@ -429,7 +429,7 @@
       "clickUrl": "/bangalore/sky-garden-whitefield-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "12.1 km",
+    "distance": 12.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -523,7 +523,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 1200
       },
       "locality": {
         "name": "Whitefield, Bangalore",
@@ -596,7 +596,7 @@
       "clickUrl": "/bangalore/sashay-taproom-kitchen-whitefield-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "13.4 km",
+    "distance": 13.4,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -690,7 +690,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1500
       },
       "locality": {
         "name": "Hebbal, Bangalore",
@@ -748,7 +748,7 @@
       "clickUrl": "/bangalore/candles-brewhouse-hebbal-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "9.3 km",
+    "distance": 9.3,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -842,7 +842,7 @@
         "text": "₹2,200 for two"
       },
       "cfo": {
-        "text": "₹900 for one"
+        "text": 900
       },
       "locality": {
         "name": "Sarjapur Road, Bangalore",
@@ -908,7 +908,7 @@
       "clickUrl": "/bangalore/street-1522-sarjapur-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "14.1 km",
+    "distance": 14.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1002,7 +1002,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1600
       },
       "locality": {
         "name": "Koramangala 5th Block, Bangalore",
@@ -1065,7 +1065,7 @@
       "clickUrl": "/bangalore/biergarten-koramangala-5th-block/info",
       "clickActionDeeplink": ""
     },
-    "distance": "4.8 km",
+    "distance": 4.8,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1172,7 +1172,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1000
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -1223,7 +1223,7 @@
       "clickUrl": "/bangalore/toit-indiranagar/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.1 km",
+    "distance": 5.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1311,7 +1311,7 @@
         "text": "₹1,700 for two"
       },
       "cfo": {
-        "text": "₹700 for one"
+        "text": 700
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -1384,7 +1384,7 @@
       "clickUrl": "/bangalore/daddy-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "4.9 km",
+    "distance": 4.9,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1478,7 +1478,7 @@
         "text": "₹1,500 for two"
       },
       "cfo": {
-        "text": "₹600 for one"
+        "text": 600
       },
       "locality": {
         "name": "JP Nagar, Bangalore",
@@ -1551,7 +1551,7 @@
       "clickUrl": "/bangalore/butterfly-brew-bite-fly-jp-nagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "7.1 km",
+    "distance": 7.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1645,7 +1645,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 800
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -1708,7 +1708,7 @@
       "clickUrl": "/bangalore/secret-story-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "4.9 km",
+    "distance": 4.9,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1802,7 +1802,7 @@
         "text": "₹1,800 for two"
       },
       "cfo": {
-        "text": "₹750 for one"
+        "text": 750
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -1855,7 +1855,7 @@
       "clickUrl": "/bangalore/miso-sexy-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5 km",
+    "distance": 5,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -1949,7 +1949,7 @@
         "text": "₹3,000 for two"
       },
       "cfo": {
-        "text": "₹1,200 for one"
+        "text": 1900
       },
       "locality": {
         "name": "BTM, Bangalore",
@@ -2012,7 +2012,7 @@
       "clickUrl": "/bangalore/stories-brewery-kitchen-btm-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "7.5 km",
+    "distance": 7.5,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -2107,7 +2107,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 800
       },
       "locality": {
         "name": "Whitefield, Bangalore",
@@ -2180,7 +2180,7 @@
       "clickUrl": "/bangalore/fox-in-the-field-whitefield-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "14.7 km",
+    "distance": 14.7,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -2274,7 +2274,7 @@
         "text": "₹1,600 for two"
       },
       "cfo": {
-        "text": "₹650 for one"
+        "text": 650
       },
       "locality": {
         "name": "HSR, Bangalore",
@@ -2347,7 +2347,7 @@
       "clickUrl": "/bangalore/oyster-bar-kitchen-hsr-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "8.2 km",
+    "distance": 8.2,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -2441,7 +2441,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 800
       },
       "locality": {
         "name": "Whitefield, Bangalore",
@@ -2514,7 +2514,7 @@
       "clickUrl": "/bangalore/red-rhino-whitefield-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "19 km",
+    "distance": 19,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -2616,7 +2616,7 @@
         "text": "₹1,800 for two"
       },
       "cfo": {
-        "text": "₹750 for one"
+        "text": 750
       },
       "locality": {
         "name": "Brigade Road, Bangalore",
@@ -2677,7 +2677,7 @@
       "clickUrl": "/bangalore/communiti-brigade-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "1.5 km",
+    "distance": 1.5,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -2765,7 +2765,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1000
       },
       "locality": {
         "name": "St. Marks Road, Bangalore",
@@ -2823,7 +2823,7 @@
       "clickUrl": "/bangalore/raahi-st-marks-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "888 m",
+    "distance": 8.8,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -2925,7 +2925,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1000
       },
       "locality": {
         "name": "Whitefield, Bangalore",
@@ -2988,7 +2988,7 @@
       "clickUrl": "/bangalore/the-pallet-2-whitefield-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "14.1 km",
+    "distance": 14.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -3090,7 +3090,7 @@
         "text": "₹2,500 for two"
       },
       "cfo": {
-        "text": "₹1,000 for one"
+        "text": 1000
       },
       "locality": {
         "name": "St. Marks Road, Bangalore",
@@ -3158,7 +3158,7 @@
       "clickUrl": "/bangalore/hard-rock-cafe-st-marks-road/info",
       "clickActionDeeplink": ""
     },
-    "distance": "922 m",
+    "distance": 9.2,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -3257,7 +3257,7 @@
         "text": "₹1,800 for two"
       },
       "cfo": {
-        "text": "₹750 for one"
+        "text": 750
       },
       "locality": {
         "name": "JP Nagar, Bangalore",
@@ -3330,7 +3330,7 @@
       "clickUrl": "/bangalore/taproom-by-sherlocks-jp-nagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "7.4 km",
+    "distance": 7.4,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -3424,7 +3424,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 800
       },
       "locality": {
         "name": "Koramangala 5th Block, Bangalore",
@@ -3497,7 +3497,7 @@
       "clickUrl": "/bangalore/the-reservoire-koramangala-5th-block/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.2 km",
+    "distance": 5.2,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -3591,7 +3591,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹800 for one"
+        "text": 800
       },
       "locality": {
         "name": "Sarjapur Road, Bangalore",
@@ -3649,7 +3649,7 @@
       "clickUrl": "/bangalore/backstreet-brewery-sarjapur-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "12.3 km",
+    "distance": 12.3,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -3751,7 +3751,7 @@
         "text": "₹1,400 for two"
       },
       "cfo": {
-        "text": "₹600 for one"
+        "text": 600
       },
       "locality": {
         "name": "Marathahalli, Bangalore",
@@ -3819,7 +3819,7 @@
       "clickUrl": "/bangalore/hashtag-88-marathahalli-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "11.7 km",
+    "distance": 11.7,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -3921,7 +3921,7 @@
         "text": "₹1,700 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 250
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -3984,7 +3984,7 @@
       "clickUrl": "/bangalore/21st-amendment-gastrobar-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.1 km",
+    "distance": 5.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -4078,7 +4078,7 @@
         "text": "₹2,200 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 250
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -4151,7 +4151,7 @@
       "clickUrl": "/bangalore/1131-bar-kitchen-by-house-of-commons-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.1 km",
+    "distance": 5.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -4253,7 +4253,7 @@
         "text": "₹1,900 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 250
       },
       "locality": {
         "name": "Kadubeesanahalli, Bangalore",
@@ -4316,7 +4316,7 @@
       "clickUrl": "/bangalore/the-boozy-griffin-kadubeesanahalli-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "11.4 km",
+    "distance": 11.4,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -4423,7 +4423,7 @@
         "text": "₹1,200 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 450
       },
       "locality": {
         "name": "HSR, Bangalore",
@@ -4496,7 +4496,7 @@
       "clickUrl": "/bangalore/house-of-commons-hsr-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "8.2 km",
+    "distance": 8.2,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -4603,7 +4603,7 @@
         "text": "₹1,900 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 750
       },
       "locality": {
         "name": "Old Airport Road, Bangalore",
@@ -4676,7 +4676,7 @@
       "clickUrl": "/bangalore/big-pitcher-airport-road/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.8 km",
+    "distance": 5.8,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -4783,7 +4783,7 @@
         "text": "₹1,400 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 550
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -4839,7 +4839,7 @@
       "clickUrl": "/bangalore/bobs-bar-1-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.1 km",
+    "distance": 5.1,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -4933,7 +4933,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 850
       },
       "locality": {
         "name": "Sarjapur Road, Bangalore",
@@ -5006,7 +5006,7 @@
       "clickUrl": "/bangalore/la-casa-brewery-and-kitchen-sarjapur-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "11.6 km",
+    "distance": 11.6,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -5105,7 +5105,7 @@
         "text": "₹1,100 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 650
       },
       "locality": {
         "name": "Koramangala 5th Block, Bangalore",
@@ -5151,7 +5151,7 @@
       "clickUrl": "/bangalore/yellow-door-the-neighbourhood-kitchen-1-koramangala-5th-block-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "4.8 km",
+    "distance": 4.8,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -5245,7 +5245,7 @@
         "text": "₹2,200 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 350
       },
       "locality": {
         "name": "Sarjapur Road, Bangalore",
@@ -5318,7 +5318,7 @@
       "clickUrl": "/bangalore/vapour-brewpub-and-diner-sarjapur-road-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "11 km",
+    "distance": 11,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -5417,7 +5417,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 850
       },
       "locality": {
         "name": "Koramangala 5th Block, Bangalore",
@@ -5485,7 +5485,7 @@
       "clickUrl": "/bangalore/brooks-and-bonds-brewery-koramangala-5th-block-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.2 km",
+    "distance": 5.2,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -5587,7 +5587,7 @@
         "text": "₹1,800 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 650
       },
       "locality": {
         "name": "Indiranagar, Bangalore",
@@ -5645,7 +5645,7 @@
       "clickUrl": "/bangalore/nevermind-bar-social-indiranagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "5.6 km",
+    "distance": 5.6,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -5747,7 +5747,7 @@
         "text": "₹1,400 for two"
       },
       "cfo": {
-        "text": "₹250 for one"
+        "text": 700
       },
       "locality": {
         "name": "JP Nagar, Bangalore",
@@ -5820,7 +5820,7 @@
       "clickUrl": "/bangalore/terrace-by-house-of-commons-jp-nagar-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "6.4 km",
+    "distance": 6.4,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -5846,7 +5846,6 @@
     "isDisabled": false,
     "bottomContainers": []
   },
-
   {
     "type": "restaurant",
     "extraImage": [
@@ -5915,7 +5914,7 @@
         "text": "₹1,800 for two"
       },
       "cfo": {
-        "text": "₹300 for one"
+        "text": 560
       },
       "locality": {
         "name": "Esteem Mall, Hebbal, Bangalore",
@@ -5981,7 +5980,7 @@
       "clickUrl": "/bangalore/flyover-drinkery-hebbal-bangalore/info",
       "clickActionDeeplink": ""
     },
-    "distance": "8.6 km",
+    "distance": 8.6,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -6007,7 +6006,6 @@
     "isDisabled": false,
     "bottomContainers": []
   },
-
   {
     "type": "restaurant",
     "extraImage": [
@@ -6076,7 +6074,7 @@
         "text": "₹1,300 for two"
       },
       "cfo": {
-        "text": "₹300 for one"
+        "text": 650
       },
       "locality": {
         "name": "Cunningham Road, Bangalore",
@@ -6137,7 +6135,7 @@
       "clickUrl": "/bangalore/eden-park-cunningham-road/info",
       "clickActionDeeplink": ""
     },
-    "distance": "1.4 km",
+    "distance": 1.4,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [
@@ -6163,7 +6161,6 @@
     "isDisabled": false,
     "bottomContainers": []
   },
-
   {
     "type": "restaurant",
     "extraImage": [
@@ -6232,7 +6229,7 @@
         "text": "₹2,000 for two"
       },
       "cfo": {
-        "text": "₹300 for one"
+        "text": 400
       },
       "locality": {
         "name": "Koramangala 5th Block, Bangalore",
@@ -6300,7 +6297,7 @@
       "clickUrl": "/bangalore/indigo-xp-koramangala-5th-block/info",
       "clickActionDeeplink": ""
     },
-    "distance": "4.8 km",
+    "distance": 4.8,
     "isPromoted": false,
     "promotedText": "",
     "trackingData": [

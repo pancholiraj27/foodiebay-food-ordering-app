@@ -7,9 +7,18 @@ const LocationIndicator = () => {
   return (
     <div className="nav-location">
       <span>
-        <a href="/">Home </a>
-        <Link to={`/${location.pathname.split("/")[1]} `}>
-          /{location.pathname.split("/")[1]}
+        <Link to="/">Home </Link>
+        <Link
+          to={
+            location.pathname !== "/cart"
+              ? `/${location.pathname.split("/")[1]}`
+              : `/order-online`
+          }
+        >
+          /
+          {location.pathname !== "/cart"
+            ? location.pathname.split("/")[1]
+            : "order-online"}
         </Link>
         / Bangalore
       </span>

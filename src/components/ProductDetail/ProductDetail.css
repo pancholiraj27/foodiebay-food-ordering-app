@@ -64,7 +64,7 @@
   justify-content: space-between;
 }
 .name-ratings h3 {
-  font-size: 38px;
+  font-size: 3.8rem;
   font-weight: 500;
 }
 .name-ratings .ratings {
@@ -81,6 +81,7 @@
   padding: 5px 10px;
   border-radius: 8px;
   color: #fff;
+  font-size: 1.8rem;
 }
 
 .ratingsMain .ratingDetail {
@@ -89,30 +90,31 @@
 .ratingsMain .ratingDetail div {
   color: rgb(54, 54, 54);
   font-weight: 700;
+  font-size: 1.4rem;
 }
 .ratingsMain .ratingDetail span {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 1.2rem;
   padding-bottom: 2px;
   border-bottom: 0.5px dashed rgb(181, 181, 181);
 }
 
 .subHeading {
   color: rgb(130, 130, 130);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 100;
   margin: 10px 0 5px;
 }
 .address {
   color: rgb(156, 156, 156);
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 100;
 }
 .timing {
   color: rgb(130, 130, 130);
   font-weight: 100;
   margin: 10px 0;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .detailEnding {
@@ -127,6 +129,7 @@
   padding: 8px 10px;
   border-radius: 12px;
   margin: 0 40px 0 0;
+  font-size: 1.8rem;
 }
 .add2Cart {
   background-color: #f1555f;
@@ -135,10 +138,94 @@
   cursor: pointer;
 }
 
-/* item.info.image.url */
-/* item.info.name */
-/* item.info.cuisine.map() - name */
-/* item.info.locality.address - name */
-/* item.info.timing .text*/
-/* https://www.google.com/maps/place - > locality.localityUrl
-/bangalore/shanti-nagar-restaurants */
+.tableBook {
+  position: absolute;
+  background-color: rgba(28, 28, 28, 0.85);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableBookConformation {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 20px;
+  font-size: 1.6rem;
+}
+
+.tableBookConformationBtns {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tableBookConformationBtn {
+  cursor: pointer;
+  background-color: #f1555f;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-right: 20px;
+  color: white;
+}
+
+.tableBookConformationBtnYes {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(130, 130, 130);
+}
+
+.isTableBook {
+  background-color: green;
+  padding-left: 25px;
+  padding-right: 25px;
+  pointer-events: none;
+}
+
+/* @media screen and (min-width: 1025) {
+}
+
+@media screen and (min-width: 480) {
+}
+@media screen and (min-width: 320px) {
+} */
+
+@media screen and (max-width: 768px) {
+  .mainDiv {
+    max-width: 90%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imageBoxPDMain {
+    flex-direction: column;
+    max-height: 0%;
+  }
+  .name-ratings {
+    flex-direction: column;
+  }
+  .imageBoxPD-1 {
+    margin: 0px;
+  }
+  .imageBoxPD-1 .img {
+    height: 350px;
+  }
+  .ratingsMain {
+    margin: 10px 0;
+  }
+  .detailEnding {
+    flex-direction: column;
+    align-items: start;
+  }
+  .direction {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imageBoxPD-1 .img {
+    height: 300px;
+  }
+}

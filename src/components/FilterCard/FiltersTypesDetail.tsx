@@ -1,5 +1,4 @@
-import React from "react";
-
+import { useLocation } from "react-router-dom";
 const FiltersTypesDetail = (props: any) => {
   const {
     whichType,
@@ -14,6 +13,10 @@ const FiltersTypesDetail = (props: any) => {
   const onFormSubmit = (e: any) => {
     e.preventDefault();
   };
+
+  const url = useLocation();
+
+  console.log(url.pathname);
   return (
     <div className="FilterTypes">
       {whichType == "sort" ? (
@@ -39,28 +42,41 @@ const FiltersTypesDetail = (props: any) => {
               type="radio"
               id="rating"
               name="test"
-              value="Rating: Hight to Low"
+              value="Rating: High to Low"
               className="objectCircle"
               onChange={() => {
-                setSortBy("Rating: Hight to Low");
+                setSortBy("Rating: High to Low");
               }}
-              checked={sortBy == "Rating: Hight to Low" ? true : false}
+              checked={sortBy == "Rating: High to Low" ? true : false}
             />
-            Rating: Hight to Low
+            Rating: High to Low
           </label>
           <label className="optionSelect" htmlFor="delivery">
             <input
               type="radio"
               id="delivery"
               name="test"
-              value="Delivery Time"
+              value={
+                url.pathname !== "/order-online" ? "Distance" : "Delivery Time"
+              }
               className="objectCircle"
               onChange={() => {
-                setSortBy("Delivery Time");
+                setSortBy(
+                  url.pathname !== "/order-online"
+                    ? "Distance"
+                    : "Delivery Time"
+                );
               }}
-              checked={sortBy == "Delivery Time" ? true : false}
+              checked={
+                sortBy ==
+                (url.pathname !== "/order-online"
+                  ? "Distance"
+                  : "Delivery Time")
+                  ? true
+                  : false
+              }
             />
-            Delivery Time
+            {url.pathname !== "/order-online" ? "Distance" : "Delivery Time"}
           </label>
           <label className="optionSelect" htmlFor="low">
             <input
@@ -81,10 +97,10 @@ const FiltersTypesDetail = (props: any) => {
               name="test"
               value="Cost: High to Low"
               className="objectCircle"
-              onChange={() => setSortBy("Cost: Hight to Low")}
-              checked={sortBy == "Cost: Hight to Low" ? true : false}
+              onChange={() => setSortBy("Cost: High to Low")}
+              checked={sortBy == "Cost: High to Low" ? true : false}
             />
-            Cost: Hight to Low
+            Cost: High to Low
           </label>
           {/* </form> */}
         </div>
@@ -112,7 +128,12 @@ const FiltersTypesDetail = (props: any) => {
           <div className="rating-cpp-header">
             <div className="rating-cpp-heading">Cost per Person</div>
             <div className="rating-cpp-amount">
-              &#8377; {costForPerson >= 1200 ? "0 - Any" : costForPerson}
+              &#8377;{" "}
+              {costForPerson >= 1200
+                ? "1,200+"
+                : costForPerson == ""
+                ? "Any"
+                : costForPerson}
             </div>
           </div>
           <div className="slider">

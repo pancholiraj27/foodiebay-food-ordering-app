@@ -26,8 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  font-size: 28px;
+  font-size: 2.8rem;
   padding: 18px;
 }
 .heading h4 {
@@ -41,6 +40,7 @@
   display: flex;
   border-bottom: 1px solid rgb(207, 207, 207);
   border-top: 1px solid rgb(207, 207, 207);
+  font-size: 1.6rem;
 }
 
 .FilterSectionType {
@@ -58,7 +58,7 @@
 
 .sortByTypeDisplay {
   color: rgb(239, 79, 95);
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-top: 5px;
 }
 
@@ -69,10 +69,11 @@
 .FilterDecision {
   display: flex;
   justify-content: space-between;
+  font-size: 1.6rem;
 }
 .applyClear {
   display: flex;
-  width: 30%;
+  width: 40%;
   margin: 10px 0;
 }
 .applyClear .clearAll {
@@ -119,9 +120,9 @@
   flex-direction: column;
 }
 
-.cppHeader .cppHeading {
+.rating-cpp-header .rating-cpp-heading {
   color: rgb(105, 105, 105);
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 .cppHeader .cppAmount {
   margin: 5px 0;
@@ -145,4 +146,28 @@ input[type="range"] {
   border: none; /* Remove any borders */
   width: 100%;
   height: 10px;
+}
+
+/* @media screen and (min-width: 1025) {
+}
+
+@media screen and (min-width: 480) {
+}
+@media screen and (min-width: 320px) {
+} */
+
+@media screen and (max-width: 768px) {
+  .FilterCard {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .applyClear {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .applyClear {
+    width: 60%;
+  }
 }

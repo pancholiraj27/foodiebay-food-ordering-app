@@ -34,11 +34,26 @@
   border-bottom-right-radius: 18px;
 }
 .aboutServiceDetail h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 200;
   margin-bottom: 10px;
 }
 .aboutServiceDetail p {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: gray;
+}
+
+/* @media screen and (min-width: 1025) {
+}
+
+@media screen and (min-width: 480) {
+}
+@media screen and (min-width: 320px) {
+} */
+
+@media screen and (max-width: 600px) {
+  .servicesBox {
+    width: 100%;
+    margin: 20px 0;
+  }
 }

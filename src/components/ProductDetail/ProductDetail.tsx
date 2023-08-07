@@ -5,8 +5,17 @@ import nightOut from "../../data/nightOut.json";
 import ServicesNavbar from "../Services-nav-header/ServicesNavbar";
 import "./ProductDetail.css";
 import { useState, useEffect } from "react";
-const ProductDetail = () => {
+import Status from "../Status/Status";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const ProductDetail = (props: any) => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  const { cartItem, setCartItem, cartItemCount, setCartItemCount } = props;
   const [fetchData, setFetchData] = useState<any>([]);
+  const [isTableBookModal, setIsTableBookModal] = useState<boolean>(false);
+  const [isTableBook, setIsTableBook] = useState<boolean>(false);
+  const [showStatus, setShowStatus] = useState(false);
   const location = useLocation();
   let id = location.search;
   id = id.substring(1);
@@ -14,21 +23,93 @@ const ProductDetail = () => {
   useEffect(() => {
     if (location.pathname.split("/")[1] == "order-online") {
       setFetchData(orderOnline);
-      console.log("fetch data here , onluine");
+      // console.log("fetch data here");
     } else if (location.pathname.split("/")[1] == "dining") {
-      console.log("fetch data here , dining");
+      // console.log("fetch data here , dining");
       setFetchData(dining);
     } else if (location.pathname.split("/")[1] == "nightlife-and-clubs") {
       setFetchData(nightOut);
     }
   }, []);
 
+  // disable the scroll when filter modal is opened
+  useEffect(() => {
+    if (isTableBookModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isTableBookModal]);
+
+  const onTableBook = (e: any) => {
+    setIsTableBookModal(true);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const addToCartClick = (price: any) => {
+    setShowStatus(true);
+    // setCartItemCount((cartItemCount :number = cartItemCount + 1));
+    setCartItem((prev: any) => {
+      const data = prev;
+      data[id]
+        ? (data[id].quantity = data[id].quantity + 1)
+        : (data[id] = { id, quantity: 1, price: price });
+      return data;
+    });
+    setTimeout(() => {
+      setCartItemCount((prevCount: number) => prevCount + 1);
+    }, 500);
+    setTimeout(() => {
+      setShowStatus(false);
+    }, 3000);
+  };
+
   return (
     <div>
-      <ServicesNavbar isOrderType={false} />
+      {showStatus ? (
+        <Status text={`Add To Cart Successfully`} style="addToCart" />
+      ) : (
+        ""
+      )}
+      {isTableBookModal ? (
+        <div className="tableBook">
+          <div className="tableBookConformation">
+            <h1>Are You Sure You Want To Book A Table</h1>
+            <div className="tableBookConformationBtns">
+              <div
+                className="tableBookConformationBtn tableBookConformationBtnYes"
+                onClick={() => {
+                  setIsTableBookModal(false);
+                  setIsTableBook(true);
+                }}
+              >
+                YES
+              </div>
+              <div
+                className="tableBookConformationBtn"
+                onClick={() => setIsTableBookModal(false)}
+              >
+                NO
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+      <ServicesNavbar
+        isOrderType={false}
+        cartItem={cartItem}
+        cartItemCount={cartItemCount}
+        setCartItemCount={setCartItemCount}
+      />
       <div className="borderTop">
         {fetchData.map((item: any) => {
-          console.log(item.info.ratingNew.ratings);
+          // console.log(item.info.ratingNew.ratings);
           if (item.info.resId === parseInt(id)) {
             return (
               <div className="mainDiv" key={parseInt(id)}>
@@ -145,9 +226,30 @@ const ProductDetail = () => {
                     <div className="direction">Direction</div>
                   </Link>
                   {location.pathname.split("/")[1] == "order-online" ? (
-                    <div className="direction add2Cart">Add To Cart</div>
+                    <div
+                      className="direction add2Cart"
+                      onClick={(e) => addToCartClick(item.info.cfo.text)}
+                    >
+                      {showStatus ? "Added To Cart" : "Add To Cart"}
+                    </div>
+                  ) : !isAuthenticated ? (
+                    <div
+                      className={`direction add2Cart ${
+                        isTableBook ? "isTableBook" : ""
+                      }`}
+                      onClick={() => alert("sign in to book a table")}
+                    >
+                      Book A Table
+                    </div>
                   ) : (
-                    <div className="direction add2Cart">Book A Table</div>
+                    <div
+                      className={`direction add2Cart ${
+                        isTableBook ? "isTableBook" : ""
+                      }`}
+                      onClick={(e) => onTableBook(e)}
+                    >
+                      {isTableBook ? "Table Booked" : "Book A Table"}
+                    </div>
                   )}
                 </div>
               </div>
@@ -158,5 +260,6 @@ const ProductDetail = () => {
     </div>
   );
 };
+// ? {isAuthenticated ? "hello" :''} :
 
 export default ProductDetail;

@@ -1,0 +1,142 @@
+.cartSection {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.cartItemsDiv {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cartItemFlex {
+  display: flex;
+  background-color: rgba(202, 202, 202, 0.1);
+  margin: 20px 0;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.cartItemFlex:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 50px 1px rgb(123, 123, 123);
+}
+
+.cartItemImg {
+  /* width: 50%; */
+  width: 40%;
+  max-width: 40%;
+}
+
+.cartItemImg img {
+  border-radius: 12px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cartItemDetails {
+  width: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cartItemDetails h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.cartItemDetails h1 {
+  font-size: 2.5rem;
+}
+
+.cartItemPrice {
+  margin: 5px 0 0;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.cartItemValue {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+.cartBtn {
+  background-color: white;
+  padding: 5px 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.quantity {
+  padding: 5px 20px;
+  font-size: 24px;
+}
+
+.emptyCart {
+  border-radius: 12px;
+  background-color: rgba(130, 130, 130, 0.1);
+  margin-top: 50px;
+  font-size: 42px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.cartCheckoutDiv {
+  position: fixed;
+  background-color: rgb(243, 243, 243);
+  /* background-color: #fafafa; */
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  padding: 12px;
+}
+.cartTotal {
+  font-size: 2rem;
+}
+
+.cartCheckout {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* @media screen and (min-width: 1025) {
+}
+
+@media screen and (min-width: 480) {
+}
+@media screen and (min-width: 320px) {
+} */
+
+@media screen and (max-width: 768px) {
+  .cartItemsDiv {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cartItemFlex {
+    flex-direction: column;
+  }
+  .cartItemImg {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cartItemDetails {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .cartItemDetails h3 {
+    margin: 5px 0;
+  }
+  .cartItemPrice {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+}
