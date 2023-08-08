@@ -71,7 +71,7 @@ const ProductDetail = (props: any) => {
   return (
     <div>
       {showStatus ? (
-        <Status text={`Add To Cart Successfully`} style="orderPlaced" />
+        <Status text={`Added To Cart Successfully`} style="orderPlaced" />
       ) : (
         ""
       )}

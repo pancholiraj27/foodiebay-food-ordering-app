@@ -18,7 +18,7 @@ const ServicesNavbar = (props: any) => {
       <div className="servicesNav">
         <div className="container">
           <Link className="linkTag" to="/">
-            <h2>Tomato</h2>
+            <h2>Foodiebay</h2>
           </Link>
         </div>
         <SearchBoxNavTop />

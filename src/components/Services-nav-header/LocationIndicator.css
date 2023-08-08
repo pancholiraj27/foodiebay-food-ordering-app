@@ -6,6 +6,8 @@
   text-decoration: none;
   color: rgb(130, 130, 130);
   transition: 0.1s ease-in;
+  text-transform: capitalize;
+  /* background-color: green; */
 }
 
 .nav-location span a:hover {

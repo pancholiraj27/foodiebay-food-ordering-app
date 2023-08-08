@@ -80,7 +80,7 @@ const SearchBoxNavTop = () => {
     <>
       {isStatus ? (
         <Status
-          text="Sorry We Are Currently Active in Bangalore"
+          text="We are currently serving only in bangalore"
           style="error"
         />
       ) : (
