@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# FoodieBay - Online Food Order App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FoodieBay is an online food order application inspired by popular platforms like Zomato. It provides users with a seamless experience to explore, order, and enjoy a variety of cuisines from their favorite restaurants. This project is a demonstration and does not process actual table reservations or food orders.
 
-## Available Scripts
+<img src="https://res.cloudinary.com/pancholiraj/image/upload/v1691652660/github%20read%20me/teqneldxuwyzpeah8ujl.png" alt="Foodiebay image" />'
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication:** Users can create accounts or sign in using Auth0 authentication to access the app's features.
+- **Browse Restaurants:** Explore a wide range of restaurants offering various cuisines.
+- **Filters:** Utilize a multitude of filters such as popularity, cost for one person, ratings, and more to refine restaurant options.
+- **Sorting:** Sort restaurants based on cost (high to low or low to high) and rating (high to low).
+- **Cart Functionality:** Add items to the cart, modify item quantities, and remove items.
+- **Table Booking:** Users can make table reservations for dining in at restaurants.
+- **Responsive Design:** Enjoy a consistent experience across different devices and screen sizes using media queries.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Frontend:** React.js (with TypeScript)
+- **Authentication:** Auth0
+- **Responsive Design:** CSS Media Queries
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository: `git clone git@github.com:pancholiraj27/foodiebay-food-ordering-app.git`
+2. Navigate to the project directory: `cd foodiebay`
+3. Install dependencies: `npm install`
+4. Start the app: `npm start`
+5. Open your web browser and access: `http://localhost:3000`
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. On the homepage, select your desired category - "Order Online," "Dining," or "Nightlife & Chill."
+2. Browse the available options within the chosen category.
+3. Sign in or create an account using Auth0 to access cart and table booking functionalities.
+4. Add items to your cart, adjust quantities, or remove items as needed.
+5. Proceed to checkout and simulate the order placement process.
+6. For table booking, select a restaurant, and submit the reservation.
+7. Click on a restaurant or food item to view detailed information on a separate detail page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Note
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is purely for demonstration purposes and does not facilitate actual food orders or table reservations. No real transactions or interactions with restaurants occur. The absence of a backend and database means that any data entered or modified will not persist between sessions.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Feedback & SUggestion
+For any feedback or suggestion, please contact me at pancholiraj27@gmail.com.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Disclaimer:** FoodieBay is a fictional project created solely for educational and illustrative purposes. It is not associated with any real company or service, such as Zomato or any other similar platform.
